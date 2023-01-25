@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "517934548880",
+    "firebase_url": "https://vyapardost-cd1fa-default-rtdb.firebaseio.com",
+    "project_id": "vyapardost-cd1fa",
+    "storage_bucket": "vyapardost-cd1fa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:517934548880:android:61b2596d019138ab8d1515",
+        "android_client_info": {
+          "package_name": "com.vyapardost.vyapardost"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "517934548880-9ddpf0kdf9dtdqu59bqp8it396ggsdbl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcmtVfnRCl5oj1Xv2rhjG5c-mnLfarx0Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "517934548880-9ddpf0kdf9dtdqu59bqp8it396ggsdbl.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "517934548880-4ada3ivf6gb9437bk6fi65d8p7pni7tq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.vyapardost.app.vyaparDost"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
