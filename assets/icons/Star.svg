@@ -1,0 +1,13 @@
+<svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="20" height="21" fill="#E5E5E5"/>
+<g id="Other Icon">
+<g id="Star" clip-path="url(#clip0_0_1)">
+<path id="Star_2" d="M9.99995 15.27L16.1799 19L14.5399 11.97L19.9999 7.23997L12.8099 6.62997L9.99995 -3.05176e-05L7.18995 6.62997L-5.34058e-05 7.23997L5.45995 11.97L3.81995 19L9.99995 15.27Z" fill="black"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_0_1">
+<rect width="20" height="20" fill="white" transform="translate(0 0.132324)"/>
+</clipPath>
+</defs>
+</svg>

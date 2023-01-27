@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:sizer/sizer.dart';
+import 'package:vyapardost_flutter/base/widgets/custom_button.dart';
+import 'package:vyapardost_flutter/constants/theme_constants.dart';
 import 'package:vyapardost_flutter/route/my_router.dart';
 
 Future<void> main() async {
@@ -30,9 +32,7 @@ class _MyAppState extends State<MyApp> {
       return MaterialApp.router(
         title: 'VyaparDost',
         debugShowCheckedModeBanner: false,
-        theme: ThemeData(
-          primarySwatch: Colors.blue,
-        ),
+        theme: ThemeConstants.appTheme(context),
         routeInformationProvider: widget.appRouter?.routeInformationProvider,
         routeInformationParser: widget.appRouter?.routeInformationParser,
         routerDelegate: widget.appRouter?.routerDelegate,
@@ -49,14 +49,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -66,22 +58,15 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headline4,
-            ),
+          children: [
+            CustomButton(
+              text: 'Bottom Button',
+              onPressed: () {},
+            )
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+      // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }

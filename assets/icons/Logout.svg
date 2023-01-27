@@ -1,0 +1,13 @@
+<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="25" height="25" fill="#E5E5E5"/>
+<g id="Other Icon">
+<g id="Logout" clip-path="url(#clip0_0_1)">
+<path id="Vector" d="M17.1426 7.13232L15.7326 8.54232L18.3126 11.1323H8.14258V13.1323H18.3126L15.7326 15.7123L17.1426 17.1323L22.1426 12.1323L17.1426 7.13232ZM4.14258 5.13232H12.1426V3.13232H4.14258C3.04258 3.13232 2.14258 4.03232 2.14258 5.13232V19.1323C2.14258 20.2323 3.04258 21.1323 4.14258 21.1323H12.1426V19.1323H4.14258V5.13232Z" fill="black"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_0_1">
+<rect width="24" height="24" fill="white" transform="translate(0.142578 0.132324)"/>
+</clipPath>
+</defs>
+</svg>

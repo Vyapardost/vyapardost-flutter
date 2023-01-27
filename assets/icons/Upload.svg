@@ -1,0 +1,13 @@
+<svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="20" height="21" fill="#E5E5E5"/>
+<g id="Other Icon">
+<g id="Upload" clip-path="url(#clip0_0_1)">
+<path id="Upload_2" d="M6.70588 15.2941H13.7647V8.23526H18.4706L10.2353 -3.05176e-05L2 8.23526H6.70588V15.2941ZM2 17.647H18.4706V20H2V17.647Z" fill="black"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_0_1">
+<rect width="20" height="20" fill="white" transform="translate(0 0.132324)"/>
+</clipPath>
+</defs>
+</svg>

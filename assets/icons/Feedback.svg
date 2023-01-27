@@ -1,0 +1,13 @@
+<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="25" height="25" fill="#E5E5E5"/>
+<g id="Other Icon">
+<g id="Feedback" clip-path="url(#clip0_0_1)">
+<path id="Vector" d="M20.1426 2.13232H4.14258C3.04258 2.13232 2.15258 3.03232 2.15258 4.13232L2.14258 22.1323L6.14258 18.1323H20.1426C21.2426 18.1323 22.1426 17.2323 22.1426 16.1323V4.13232C22.1426 3.03232 21.2426 2.13232 20.1426 2.13232ZM13.1426 14.1323H11.1426V12.1323H13.1426V14.1323ZM13.1426 10.1323H11.1426V6.13232H13.1426V10.1323Z" fill="black"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_0_1">
+<rect width="24" height="24" fill="white" transform="translate(0.142578 0.132324)"/>
+</clipPath>
+</defs>
+</svg>
