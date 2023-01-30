@@ -7,7 +7,7 @@ import '../../constants/text_themes_constants.dart';
 class CustomTextField extends StatefulWidget {
   const CustomTextField(
       {Key? key,
-      required this.input,
+      required this.controller,
       this.hintText,
       this.length,
       this.onTap,
@@ -35,7 +35,7 @@ class CustomTextField extends StatefulWidget {
       this.focusNode,
       this.iconButton})
       : super(key: key);
-  final TextEditingController input;
+  final TextEditingController controller;
   final String? hintText, labelText, helperText, preFilledValue, errorText;
   final TextInputAction? textInputAction;
   final int? length, maxLines;
@@ -64,7 +64,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
   Widget build(BuildContext context) {
     return TextFormField(
         focusNode: widget.focusNode,
-        controller: widget.input,
+        controller: widget.controller,
         onTap: widget.onTap,
         onSaved: widget.onSaved,
         validator: widget.validator,

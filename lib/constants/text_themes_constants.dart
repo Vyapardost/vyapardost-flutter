@@ -3,6 +3,12 @@ import 'package:sizer/sizer.dart';
 
 import 'color_constants.dart';
 
+TextStyle heading3 = TextStyle(
+  fontSize: SizerUtil.deviceType == DeviceType.web ? 7.0.sp : 24,
+  fontWeight: FontWeight.w700,
+  color: textColor,
+);
+
 TextStyle bodyLargeRegular = TextStyle(
   fontSize: SizerUtil.deviceType == DeviceType.web ? 5.0.sp : 16,
   fontWeight: FontWeight.w400,
@@ -28,13 +34,13 @@ TextStyle bodySmallSemiBold = TextStyle(
 );
 
 TextStyle captionLargeRegular = TextStyle(
-  fontSize: SizerUtil.deviceType == DeviceType.web ? 4.0.sp : 12.sp,
+  fontSize: SizerUtil.deviceType == DeviceType.web ? 4.0.sp : 12,
   fontWeight: FontWeight.w400,
   color: textColor,
 );
 
 TextStyle captionLargeSemiBold = TextStyle(
-  fontSize: SizerUtil.deviceType == DeviceType.web ? 4.0.sp : 12.sp,
+  fontSize: SizerUtil.deviceType == DeviceType.web ? 4.0.sp : 12,
   fontWeight: FontWeight.w600,
   color: textColor,
 );
@@ -94,3 +100,5 @@ TextStyle textBoxEnableStyle = bodyLargeSemiBold.copyWith(color: white);
 TextStyle tabTextStyle = bodyLargeSemiBold.copyWith(color: primaryColor);
 
 TextStyle tabTextEnableStyle = bodyLargeSemiBold.copyWith(color: white);
+
+TextStyle logoTextStyle = heading3.copyWith(color: primaryColor);
