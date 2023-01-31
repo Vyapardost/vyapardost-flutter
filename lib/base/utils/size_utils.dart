@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
 
 //height sized box
+const Widget size132H = SizedBox(height: 132);
+const Widget size102H = SizedBox(height: 102);
+const Widget size90H = SizedBox(height: 90);
 const Widget size76H = SizedBox(height: 76);
 const Widget size52H = SizedBox(height: 52);
+const Widget size46H = SizedBox(height: 46);
 const Widget size40H = SizedBox(height: 40);
 const Widget size26H = SizedBox(height: 26);
 const Widget size10H = SizedBox(height: 10);

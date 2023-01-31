@@ -3,8 +3,14 @@ import 'package:sizer/sizer.dart';
 
 import 'color_constants.dart';
 
-TextStyle heading3 = TextStyle(
+TextStyle heading3Bold = TextStyle(
   fontSize: SizerUtil.deviceType == DeviceType.web ? 7.0.sp : 24,
+  fontWeight: FontWeight.w700,
+  color: textColor,
+);
+
+TextStyle heading4Bold = TextStyle(
+  fontSize: SizerUtil.deviceType == DeviceType.web ? 6.0.sp : 20,
   fontWeight: FontWeight.w700,
   color: textColor,
 );
@@ -101,4 +107,8 @@ TextStyle tabTextStyle = bodyLargeSemiBold.copyWith(color: primaryColor);
 
 TextStyle tabTextEnableStyle = bodyLargeSemiBold.copyWith(color: white);
 
-TextStyle logoTextStyle = heading3.copyWith(color: primaryColor);
+TextStyle logoTextStyle = heading3Bold.copyWith(color: primaryColor);
+
+TextStyle onboardingTextStyle = heading3Bold.copyWith(color: primaryColor);
+
+TextStyle onboardingSmallTextStyle = heading4Bold.copyWith(color: primaryColor);

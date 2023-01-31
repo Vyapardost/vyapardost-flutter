@@ -3,7 +3,7 @@ import 'package:go_router/go_router.dart';
 import 'package:vyapardost_flutter/route/route_name.dart';
 import 'package:vyapardost_flutter/route/route_paths.dart';
 
-import '../modules/register/ui/signup_form_page.dart';
+import '../modules/onboarding/ui/onboarding_ui.dart';
 
 class MyRouter {
   Future<GoRouter> appRouter({userObject, initialLink}) async {
@@ -14,7 +14,7 @@ class MyRouter {
         pageBuilder: (context, state) {
           return CupertinoPage(
             key: state.pageKey,
-            child: const SignUpFormUI(),
+            child: const OnboardingUI(),
           );
         },
       ),
