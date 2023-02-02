@@ -4,6 +4,7 @@ import 'package:vyapardost_flutter/base/utils/size_utils.dart';
 import 'package:vyapardost_flutter/base/widgets/custom_button.dart';
 import 'package:vyapardost_flutter/base/widgets/custom_text_field.dart';
 import 'package:vyapardost_flutter/base/widgets/logo_with_text.dart';
+import 'package:vyapardost_flutter/base/widgets/screen_padding.dart';
 import 'package:vyapardost_flutter/base/widgets/widget_box.dart';
 import 'package:vyapardost_flutter/constants/text_themes_constants.dart';
 
@@ -21,37 +22,36 @@ class SignUpFormUI extends StatelessWidget {
 
     return SafeArea(
       top: false,
-      child: Scaffold(
-          body: Container(
-              padding: const EdgeInsets.symmetric(horizontal: 16),
-              child: SingleChildScrollView(
-                child: Form(
-                  key: formKey,
-                  child: Column(
-                    children: [
-                      size52H,
-                      const LogoWithText(),
-                      size52H,
-                      fieldWithText('Email', emailController),
-                      size26H,
-                      fieldWithText('Password', passwordController),
-                      size6H,
-                      instructionForPassword(),
-                      size26H,
-                      authButton(),
-                      forgotPasswordText(),
-                      size40H,
-                      continueText(),
-                      size40H,
-                      otherSiteAuth(),
-                      size76H,
-                      haveReferralCodeText(),
-                      size40H,
-                      termAndConditionText(),
-                    ],
-                  ),
-                ),
-              ))),
+      child: ScreenPadding(
+        child: SingleChildScrollView(
+          child: Form(
+            key: formKey,
+            child: Column(
+              children: [
+                size26H,
+                const LogoWithText(),
+                size52H,
+                fieldWithText('Email', emailController),
+                size26H,
+                fieldWithText('Password', passwordController),
+                size6H,
+                instructionForPassword(),
+                size26H,
+                authButton(),
+                forgotPasswordText(),
+                size40H,
+                continueText(),
+                size40H,
+                otherSiteAuth(),
+                size76H,
+                haveReferralCodeText(),
+                size40H,
+                termAndConditionText(),
+              ],
+            ),
+          ),
+        ),
+      ),
     );
   }
 
