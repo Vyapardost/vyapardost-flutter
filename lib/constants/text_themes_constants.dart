@@ -93,6 +93,12 @@ TextStyle? buttonOutlineTextTheme = TextStyle(
   color: textColor,
 );
 
+TextStyle? buttonDisableTextTheme = TextStyle(
+  fontSize: SizerUtil.deviceType == DeviceType.web ? 5.0.sp : 16,
+  fontWeight: FontWeight.w500,
+  color: grayDark,
+);
+
 TextStyle textFieldBody = bodySmallRegular;
 
 TextStyle textFieldHintBody = bodySmallRegular.copyWith(color: lightBlack);

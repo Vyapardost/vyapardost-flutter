@@ -31,7 +31,7 @@ class CustomBottomSheet extends StatelessWidget {
         builder: (ctx, controller) => Container(
           decoration: const BoxDecoration(
             color: Colors.white,
-            borderRadius: BorderRadius.vertical(top: Radius.circular(24)),
+            borderRadius: BorderRadius.vertical(top: Radius.circular(16)),
           ),
           padding:
               const EdgeInsets.only(left: 16, right: 16, top: 30, bottom: 30),

@@ -20,35 +20,32 @@ class SignUpFormUI extends StatelessWidget {
     TextEditingController emailController = TextEditingController();
     TextEditingController passwordController = TextEditingController();
 
-    return SafeArea(
-      top: false,
-      child: ScreenPadding(
-        child: SingleChildScrollView(
-          child: Form(
-            key: formKey,
-            child: Column(
-              children: [
-                size26H,
-                const LogoWithText(),
-                size52H,
-                fieldWithText('Email', emailController),
-                size26H,
-                fieldWithText('Password', passwordController),
-                size6H,
-                instructionForPassword(),
-                size26H,
-                authButton(),
-                forgotPasswordText(),
-                size40H,
-                continueText(),
-                size40H,
-                otherSiteAuth(),
-                size76H,
-                haveReferralCodeText(),
-                size40H,
-                termAndConditionText(),
-              ],
-            ),
+    return ScreenPadding(
+      child: SingleChildScrollView(
+        child: Form(
+          key: formKey,
+          child: Column(
+            children: [
+              size26H,
+              const LogoWithText(),
+              size52H,
+              fieldWithText('Email', emailController),
+              size26H,
+              fieldWithText('Password', passwordController),
+              size6H,
+              instructionForPassword(),
+              size26H,
+              authButton(),
+              forgotPasswordText(),
+              size40H,
+              continueText(),
+              size40H,
+              otherSiteAuth(),
+              size76H,
+              haveReferralCodeText(),
+              size40H,
+              termAndConditionText(),
+            ],
           ),
         ),
       ),
@@ -136,21 +133,6 @@ class SignUpFormUI extends StatelessWidget {
               size10W,
               Text(
                 'Google',
-                style: bodyLargeRegular.copyWith(fontWeight: FontWeight.w500),
-              )
-            ],
-          )),
-        ),
-        size16W,
-        Expanded(
-          child: WidgetBox(
-              child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              SvgPicture.asset('assets/icons/apple.svg'),
-              size10W,
-              Text(
-                'Apple',
                 style: bodyLargeRegular.copyWith(fontWeight: FontWeight.w500),
               )
             ],

@@ -1,1 +1,13 @@
 const String initialRoute = '/';
+const String loginRoute = '/login_page';
+const String emailVerifyRoute = '/email_verify_page';
+const String enterMobileRoute = '/enter_mobile_page';
+const String enterOtpRoute = '/enter_otp_page';
+const String buyerVsSellerRoute = '/buyer_vs_seller_page';
+const String enterMailToPasswordRoute = '/enter_mail_to_reset_password_page';
+const String resetPasswordRoute = '/reset_password_page';
+const String changeMailRoute = '/change_mail_page';
+const String gstLoginSellerRoute = '/gst_login_seller_page';
+const String gstLoginBuyerRoute = '/gst_login_buyer_page';
+const String gstOtpRoute = '/gst_otp_page';
+const String businessDetailsRoute = '/business_details_page';

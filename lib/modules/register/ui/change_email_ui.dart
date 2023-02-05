@@ -15,6 +15,7 @@ class ChangeEmailUI extends StatelessWidget {
   Widget build(BuildContext context) {
     return ScreenPadding(
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           titleText(),
           size10H,

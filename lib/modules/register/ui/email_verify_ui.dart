@@ -36,7 +36,7 @@ class EmailVerifyUI extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        SvgPicture.asset('assets/icons/email2.svg'),
+        SvgPicture.asset('assets/icons/email_2.svg'),
         size16H,
         Text(
           'Open your email',

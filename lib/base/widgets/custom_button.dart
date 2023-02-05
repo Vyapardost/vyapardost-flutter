@@ -8,6 +8,7 @@ class CustomButton extends StatelessWidget {
   final VoidCallback? onPressed;
   final bool outlineBtn;
   final bool isLoading;
+  final bool isEnable;
   final double? height;
   final IconData? icon;
   final Color? fillColor;
@@ -17,6 +18,7 @@ class CustomButton extends StatelessWidget {
       this.onPressed,
       this.outlineBtn = false,
       this.isLoading = false,
+      this.isEnable = true,
       this.fillColor,
       this.icon,
       this.height})
@@ -30,7 +32,11 @@ class CustomButton extends StatelessWidget {
         // height: Responsive.isDesktop(context) ? 5.0.h : height ?? 45.0,
         padding: const EdgeInsets.symmetric(vertical: 12),
         decoration: BoxDecoration(
-          color: outlineBtn ? null : fillColor ?? primaryColor,
+          color: outlineBtn
+              ? null
+              : isEnable
+                  ? fillColor ?? primaryColor
+                  : offWhite,
           border: outlineBtn
               ? Border.all(
                   color: black,
@@ -49,14 +55,21 @@ class CustomButton extends StatelessWidget {
                 children: [
                   Text(
                     text ?? '',
-                    style:
-                        outlineBtn ? buttonOutlineTextTheme : buttonTextTheme,
+                    style: outlineBtn
+                        ? buttonOutlineTextTheme
+                        : isEnable
+                            ? buttonTextTheme
+                            : buttonDisableTextTheme,
                   ),
                   if (icon != null)
                     const SizedBox(
                       width: 12,
                     ),
-                  if (icon != null) Icon(icon)
+                  if (icon != null)
+                    Icon(
+                      icon,
+                      color: Colors.white,
+                    )
                 ],
               ),
             ),

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:go_router/go_router.dart';
 import 'package:vyapardost_flutter/base/widgets/custom_button.dart';
+import 'package:vyapardost_flutter/route/route_name.dart';
 
 import '../../../base/utils/size_utils.dart';
 import '../../../base/widgets/logo_with_text.dart';
@@ -78,7 +80,9 @@ class _OnboardingUIState extends State<OnboardingUI> {
       padding: const EdgeInsets.only(bottom: 26.0),
       child: CustomButton(
         text: 'Log In',
-        onPressed: () {},
+        onPressed: () {
+          context.pushNamed(businessDetailsPage);
+        },
       ),
     );
   }
@@ -115,7 +119,7 @@ class _OnboardingUIState extends State<OnboardingUI> {
           style: onboardingTextStyle,
         ),
         size26H,
-        iconTextPair('8665118_book_open_icon.svg', 'Smart Orders'),
+        iconTextPair('orange_book.svg', 'Smart Orders'),
         size10H,
         iconTextPair('Sign.svg', 'Digital Signature'),
         size10H,

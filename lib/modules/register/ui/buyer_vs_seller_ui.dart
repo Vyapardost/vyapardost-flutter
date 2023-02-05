@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:vyapardost_flutter/base/utils/size_utils.dart';
+import 'package:vyapardost_flutter/base/widgets/screen_padding.dart';
 import 'package:vyapardost_flutter/constants/color_constants.dart';
 import 'package:vyapardost_flutter/constants/text_themes_constants.dart';
 
-class BuyerVsSmaller extends StatelessWidget {
-  const BuyerVsSmaller({Key? key}) : super(key: key);
+class BuyerVsSeller extends StatelessWidget {
+  const BuyerVsSeller({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Column(
+    return ScreenPadding(
+      child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -30,24 +31,25 @@ class BuyerVsSmaller extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 26),
       decoration: BoxDecoration(
+          color: Colors.white,
           boxShadow: [
             BoxShadow(
-              color: primaryColor.withOpacity(0.5),
-              spreadRadius: 4,
-              blurRadius: 4,
+              color: lightGray,
+              spreadRadius: 2,
+              blurRadius: 2,
               offset: const Offset(2, 2), // changes position of shadow
             ),
             BoxShadow(
-              color: primaryColor.withOpacity(0.5),
-              spreadRadius: 4,
-              blurRadius: 4,
+              color: lightGray,
+              spreadRadius: 2,
+              blurRadius: 2,
               offset: const Offset(-2, -2), // changes position of shadow
             ),
           ],
           border: Border.all(color: primaryColor),
           borderRadius: BorderRadius.circular(6)),
       child: Row(children: [
-        Image.asset(imagePath),
+        SizedBox(height: 60, width: 60, child: Image.asset(imagePath)),
         size40W,
         Text(
           text,

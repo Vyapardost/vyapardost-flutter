@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:pin_code_fields/pin_code_fields.dart';
 import 'package:vyapardost_flutter/base/widgets/screen_padding.dart';
 
 import '../../../base/utils/size_utils.dart';
 import '../../../base/widgets/custom_button.dart';
-import '../../../base/widgets/custom_text_field.dart';
 import '../../../constants/color_constants.dart';
 import '../../../constants/text_themes_constants.dart';
 
@@ -16,6 +16,7 @@ class EnterOtpUI extends StatelessWidget {
   Widget build(BuildContext context) {
     return ScreenPadding(
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           titleText(),
           size10H,
@@ -23,15 +24,17 @@ class EnterOtpUI extends StatelessWidget {
           size10H,
           changeText(),
           size40H,
-          enterOtpField(),
+          enterOtpField(context),
           const Spacer(),
           const CustomButton(
             text: 'Next',
           ),
           size10H,
-          const Text(
-            'Resend OTP (30s)',
-            textAlign: TextAlign.center,
+          const Center(
+            child: Text(
+              'Resend OTP (30s)',
+              textAlign: TextAlign.center,
+            ),
           )
         ],
       ),
@@ -45,6 +48,7 @@ class EnterOtpUI extends StatelessWidget {
           'Enter',
           style: heading4Bold.copyWith(color: primaryColor),
         ),
+        size6W,
         Text('OTP', style: heading4Bold.copyWith(color: secondaryColor))
       ],
     );
@@ -64,9 +68,23 @@ class EnterOtpUI extends StatelessWidget {
     );
   }
 
-  Widget enterOtpField() {
-    return CustomTextField(
-      controller: otpController,
-    );
+  Widget enterOtpField(
+    BuildContext context,
+  ) {
+    return PinCodeTextField(
+        controller: otpController,
+        appContext: context,
+        textStyle: bodySmallRegular,
+        pinTheme: PinTheme(
+          activeColor: primaryColor,
+          inactiveColor: primaryColor,
+          selectedColor: primaryColor,
+          shape: PinCodeFieldShape.box,
+          borderRadius: BorderRadius.circular(6),
+          borderWidth: 1,
+          fieldHeight: 40,
+        ),
+        length: 6,
+        onChanged: (val) {});
   }
 }

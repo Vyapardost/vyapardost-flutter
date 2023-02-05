@@ -7,10 +7,10 @@ import '../../../base/utils/size_utils.dart';
 import '../../../base/widgets/custom_text_field.dart';
 import '../../../constants/color_constants.dart';
 
-class ResetPasswordUI extends StatelessWidget {
-  ResetPasswordUI({Key? key}) : super(key: key);
+class EnterMailToResetPasswordUI extends StatelessWidget {
+  EnterMailToResetPasswordUI({Key? key}) : super(key: key);
 
-  final TextEditingController newPasswordController = TextEditingController();
+  final TextEditingController emailController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -20,12 +20,10 @@ class ResetPasswordUI extends StatelessWidget {
       children: [
         titleText(),
         size30H,
-        fieldWithText('New Password', newPasswordController),
-        size6H,
-        instructionForPassword(),
+        fieldWithText('Email', emailController),
         size30H,
         const CustomButton(
-          text: 'Submit',
+          text: 'Reset Password',
         ),
         size10H,
         Center(
@@ -41,14 +39,7 @@ class ResetPasswordUI extends StatelessWidget {
 
   Widget titleText() {
     return Text(
-      'Type New Password',
-      style: heading4Bold,
-    );
-  }
-
-  Widget labelNewPassword() {
-    return Text(
-      'New Password',
+      'Enter email to reset password',
       style: heading4Bold,
     );
   }
@@ -65,25 +56,6 @@ class ResetPasswordUI extends StatelessWidget {
         CustomTextField(
           controller: controller,
         ),
-      ],
-    );
-  }
-
-  Widget instructionForPassword() {
-    return Row(
-      children: [
-        const Icon(
-          Icons.info_outline,
-          color: black,
-        ),
-        size12W,
-        Expanded(
-          child: Text(
-            'minimum 8 characters with combination of upper case, lower case, number and special character.',
-            maxLines: 2,
-            style: captionLargeRegular.copyWith(color: grayDark),
-          ),
-        )
       ],
     );
   }
