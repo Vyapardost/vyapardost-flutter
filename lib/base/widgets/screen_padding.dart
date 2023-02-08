@@ -3,7 +3,9 @@ import 'package:flutter/material.dart';
 class ScreenPadding extends StatelessWidget {
   final Widget child;
   final bool resize;
-  const ScreenPadding({Key? key, required this.child, this.resize = false})
+  final AppBar? appBar;
+  const ScreenPadding(
+      {Key? key, required this.child, this.resize = false, this.appBar})
       : super(key: key);
 
   @override
@@ -11,6 +13,7 @@ class ScreenPadding extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         resizeToAvoidBottomInset: resize,
+        appBar: appBar,
         body: Container(
           padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 26),
           child: child,
