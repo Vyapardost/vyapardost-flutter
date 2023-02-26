@@ -6,7 +6,7 @@ import 'package:vyapardost_flutter/constants/theme_constants.dart';
 import 'package:vyapardost_flutter/route/my_router.dart';
 
 Future<void> main() async {
-  // Call this before any async task
+  //Call this before any async task
   WidgetsFlutterBinding.ensureInitialized();
 
   final routerClass = MyRouter();
